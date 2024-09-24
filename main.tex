@@ -1,0 +1,147 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+% Define the font to use for the entire document
+\renewcommand{\rmdefault}{ptm}
+
+% Define custom section formatting
+
+\titleformat{\section}
+  {\large\bfseries}
+  {}{0em}
+  {}[\titlerule]
+
+% Define custom list formatting
+\setlist[itemize]{itemsep=2pt,topsep=4pt}
+
+\begin{document}
+
+% Header
+\begin{center}
+    \textbf{\large John Lee}\\ 
+\end{center}
+
+\begin{center}
+    {\raisebox{-0.2\height}\faHome\  \underline{535 S Hobart Los Angeles, CA, 90020 }}
+     \ \href{mailto:tmdgjs2592@g.ucla.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{tmdgjs2592@g.ucla.edu}} 
+     {\raisebox{-0.2\height}\faPhone\ \underline{(213) 352-2592}} \\
+             \href{https://github.com/tmdgjs2592}{\raisebox{-0.2\height}\faGithub\ \underline{https://github.com/tmdgjs2592}}
+             \href{https://www.linkedin.com/in/lee-john-9b9b20221/}{\raisebox{-0.2\height}\faLinkedin\ \underline{https://www.linkedin.com/in/lee-john}}
+             
+{\raisebox{-0.2\height}\faStar\ {Interests: }}
+    % \rule{\linewidth}{0.1mm}
+\end{center}
+
+  
+% \hspace{-7mm}
+%   \begin{wrapfigure} 
+%     \includegraphics[width=0.02\textwidth]{home_icon3.png}
+%   \end{wrapfigure}
+%   535 S Hobart Los Angeles, CA, 90020 
+% \hspace{10mm}
+%   \begin{wrapfigure} 
+%     \includegraphics[width=0.02\textwidth]{github_icon.png}
+%   \end{wrapfigure}
+%   https://github.com/tmdgjs2592
+%   \\
+% \hspace{-4mm}
+%   \begin{wrapfigure} 
+%     \includegraphics[width=0.02\textwidth]{email_icon4.png}
+%   \end{wrapfigure}
+%   johnlee011202@gmail.com 
+% \hspace{25.5mm}
+%   \begin{wrapfigure} 
+%     \includegraphics[width=0.02\textwidth]{linkedin_icon.png}
+%   \end{wrapfigure}
+%     https://www.linkedin.com/in/lee-john-9b9b20221/
+%   \\
+%   \begin{wrapfigure} 
+%     \includegraphics[width=0.02\textwidth]{phone_icon.png}
+%   \end{wrapfigure}
+%   (213) 352-2592 \\
+% Skills
+\section*{Skills}
+\textbf{Programming Languages:} Python, C++, JavaScript, \LaTeX \\
+\textbf{Machine Learning \& Computer Vision:} PyTorch, OpenCV, Tesseract.py/js \\
+\textbf{Web Development:} HTML, CSS, JavaScript, Node.js \\
+\textbf{Databases:} SQL \\
+
+% Education
+\section*{Education}
+\textit{University of California, Los Angeles}, Los Angeles , CA \hspace*{\fill} September 2023 - Current \\
+Bachelors in \textit{Computer Science}\\
+\textbf{Relevant Coursework:} Computer Graphics, Operating Systems, Introduction to Machine Learning Data Structure, Software Construction.
+\\
+
+\noindent\textit{Santa Monica College}, Santa Monica, CA \hspace*{\fill} August 2021 - June 2023 \\
+Transfer without Associate Degree in \textit{Computer Science} \\ 
+
+% Projects
+\section*{Projects}
+
+\textbf{A Framework for Evaluating Embedding Techniques (FEET)} 
+\href{https://github.com/Simonlee711/FEET}{\faGithub} 
+\href{https://drive.google.com/file/d/1DEEyCGNTNiPLP5uQpIZ-lwrw1W03NUzs/view?usp=sharing}{\faNewspaper} \\
+\begin{itemize}
+    \item Designed a protocol for benchmarking foundation models by reporting them under zero-shot, few-shot, and fine-tuned embeddings. This provides a holistic view of how a foundation model performs under different experimental conditions.
+    \item Submitted this work to ML4H, a top-tier AI in Healthcare venue for publication and presentation as a co-author.
+\end{itemize}
+
+\hspace{-5mm}\textbf{\textit{Frameworks Used:}} Pytorch, HuggingFace, MIMIC-IV, AutoModel \\
+
+
+\noindent\textbf{Historical Document Analysis} \href{https://github.com/tmdgjs2592/Text-Renewal}{\faGithub }
+\begin{itemize}
+    \item Built a platform that transforms illegible text from JPEG images into a digital and easily readable format using optical character recognition (OCR)
+    \item Worked with raw imaging data and how to preprocess and handle them efficiently using dataloaders.
+    
+\end{itemize}
+\textbf{\textit{Frameworks Used:} }Node.js, mySQL, TesseractOCR \\
+
+
+\hspace{-5.5mm}\textbf{Inventory Bot} \href{https://github.com/tmdgjs2592/inventory_bot}{\faGithub }
+\begin{itemize}
+    \item Developed an app that allows users to check the number of certain products purchased on retail websites
+    \item Scraped websites and turned them into insights about consumer demand and other analytics. 
+\end{itemize}
+\textbf{\textit{Frameworks Used:}} BeautifulSoup, Selenium, PyQt5  \\
+
+% \hspace{-5.5mm}\textbf{Countle}\\
+% \begin{itemize}
+%     \item Built an interactive game utilizing a Word2Vec model, where users input queries to receive similarity scores, and guess countries based on the output.\\
+% \end{itemize}
+% \textbf{\textit{Frameworks Used:}} Flask, Javascript, SQLite (sqlite3)  \\
+
+% % Relevant Coursework
+% \section*{Relevant Coursework}
+% \begin{itemize}
+%   \item Computer Graphics
+%   \item Operating System
+%   \item Introduction to Machine Learning
+%   \item Data Structures 
+%   \item Software Construction
+% \end{itemize}
+
+
+\section*{Publication}
+Lee, S. A., \textbf{Lee, J.}, Chiang, J.N., FEET: A Framework for Evaluating Embedding Techniques. Machine Learning for Healthcare Conference. (under review)
+
+
+% Awards and Honors
+%\section*{Languages}
+%\begin{itemize}
+%  \item Korean, Native
+%  \item English, Fluent
+%\end{itemize}
+
+% References
+
+
+
+
+
+\end{document}
